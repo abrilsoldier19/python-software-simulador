@@ -252,7 +252,7 @@ def ejercicio_3_opciona():
 #Se define el ejercicio 1 opcion b --------------------------------------------------------------------------------------------------------------------
 def ejercicio_1_opcionb():
     filewin = Toplevel(root)
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("ib) Cálculo de relación de transmisión del mecanismo")
     filewin.configure(bg="black")
     titulo=Label(filewin, 
 	text="""Simulación del cálculo de relación de transmisión del mecanismo de un
@@ -350,7 +350,7 @@ tren de poleas constituido por tres escalonamientos en mm""",
 #Se define el ejercicio 2 opcion b --------------------------------------------------------------------------------------------------------------------
 def ejercicio_2_opcionb():
     filewin = Toplevel(root)
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("iib) Cálculo de la velocidad del eje de salida")
     filewin.configure(bg="black")
     titulo=Label(filewin, 
 	text="""Simulación del cálculo de la velocidad del eje de salida de un tren de poleas
@@ -423,7 +423,7 @@ constituido por tres escalonamientos en mm""",
 #Se define el ejercicio 3 opcion b --------------------------------------------------------------------------------------------------------------------
 def ejercicio_3_opcionb():
     filewin = Toplevel(root)
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("iiib) Cálculo de la velocidad del último árbol")
     filewin.configure(bg="black")
     
     contenedor = Frame(filewin)
@@ -566,7 +566,7 @@ constituido por tres escalonamientos en mm""",
 def ejercicio_4_opcionb():
     filewin = Toplevel(root)
     filewin.configure(bg="black")
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("4b) Cálculo de la relación de transmisión de velocidad total")
     
     titulo=Label(filewin, 
 	text="""Simulación del cálculo de la relación de transmisión de velocidad total de un tren de
@@ -638,7 +638,7 @@ poleas constituido por tres escalonamientos en mm""",
 def ejercicio_5_opcionb():
     filewin = Toplevel(root)
     filewin.configure(bg="black")
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("5b) Cálculo del diámetro de la polea")
 
     titulo=Label(filewin, 
 	text="""Simulación del cálculo del diámetro de la polea de un tren de poleas
@@ -735,7 +735,7 @@ constituido por tres escalonamientos en mm""",
 def ejercicio_opcionc():
     filewin = Toplevel(root)
     filewin.configure(bg="black")
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("c) Calculo de la potencia nominal del sistema por correa")
 
     titulo=Label(filewin, 
 	text="Simulacion del calculo de la potencia nominal del sistema por correa",
@@ -865,7 +865,7 @@ def ejercicio_opcionc():
 def ejercicio_1_opciond():
     filewin = Toplevel(root)
     filewin.configure(bg="black")
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("id) Cálculo de relación de transmisión del mecanismo de un Tren de engranajes")
 
     titulo=Label(filewin, 
 	text="""Simulación del cálculo de relación de transmisión del mecanismo de un Tren de engranajes
@@ -969,7 +969,7 @@ def ejercicio_1_opciond():
 def ejercicio_2_opciond():
     filewin = Toplevel(root)
     filewin.configure(bg="black")
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("iid) Cálculo de la velocidad del eje de salida de un Tren de engranajes simple")
 
     titulo=Label(filewin, 
 	text="""Simulación del cálculo de la velocidad del eje de salida de un Tren de engranajes simple
@@ -1045,7 +1045,7 @@ constituido por tres escalonamientos en mm""",
 def ejercicio_3_opciond():
     filewin = Toplevel(root)
     filewin.configure(bg="black")
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("iiid) Cálculo de Velocidad de giro de un tren de engranajes")
 
     titulo=Label(filewin, 
 	text="""Simulación del cálculo de Velocidad de giro de un tren de engranajes formado por engranajes
@@ -1147,7 +1147,7 @@ def ejercicio_3_opciond():
 def ejercicio_4_opciond():
     filewin = Toplevel(root)
     filewin.configure(bg="black")
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("ivd) Cálculo del número de dientes de las ruedas conducidas de un tren de engranajes")
 
     titulo=Label(filewin, 
 	text="""Simulación del cálculo del número de dientes de las ruedas conducidas de un tren de engranajes en mm""",
@@ -1253,7 +1253,7 @@ def ejercicio_4_opciond():
 def ejercicio_5_opciond():
     filewin = Toplevel(root)
     filewin.configure(bg="black")
-    filewin.title("iiia) Cálculo de Longitud de correa")
+    filewin.title("vd) Cálculo de la potencia nominal en transmisión por correa dentada")
     
     contenedor = Frame(filewin)
     canvas = Canvas(contenedor, height = 300, width=450)
@@ -1530,11 +1530,13 @@ def ejercicio_2_opcione():
     filewin.configure(bg="black")
     formula=Label(filewin, 
 	text="""Fórmula  para calcular las dimensiones:
-                         Altura del diente (h): h=2.25*m
+                         División(p): p = m*pi
+                         Diámetro del círculo primitivo(d): d=z*m
+                         diámetro del círculo de cabeza(dc): dc=d +2*m
+                         diámetro del círculo de pie(dp): dp = d-2*hp
+                         Altura del diente (h): h= hc + hp
                          Altura de la cabeza del diente (hc): hc=m
-                         Altura del pie del diente (hp): hp=1.25*m
-                         Espesor del diente (e): e=0.5*P
-                         Anchura del diente (B): B=m*10""",
+                         Altura del pie del diente (hp): hp=1.25*m""",
 	font="Calibri 11 bold", fg="black", bg="#85D5FE")
     formula.pack(padx=5, pady=20)
     
@@ -1556,33 +1558,83 @@ def ejercicio_2_opcione():
 
     #Definición de formulas
 
-    def operacion51(m, Z):
-        return ((m*Z))
+    def operacion(z, m):
+        p = (m*(math.pi))
+        d = z * m
+        dc = d + 2*m
+        hc  = m
+        hp = 1.25*m
+        dp = d -2*hp
+        h = hc + hp
+        return p, d, dc, dp, hc, hp, h
 
-    def ejecutar_operacion51():
+    def ejecutar_operacion():
         valor_num_m = int(campo_num_m.get())
         valor_num_dientesz = int(campo_num_dientesz.get())
 
-        resultado = operacion51(valor_num_m, valor_num_dientesz)
-        label_valor_result.config(text = resultado)
+        resultado_p, resultado_d, resultado_dc, resultado_dp, resultado_hc, resultado_hp, resultado_h = operacion(valor_num_dientesz, valor_num_m)
+
+        label_valor_result_p.config(text="{}".format(resultado_p))
+        label_valor_result_d.config(text="{}".format(resultado_d))
+        label_valor_result_dc.config(text="{}".format(resultado_dc))
+        label_valor_result_dp.config(text="{}".format(resultado_dp))
+        label_valor_result_hc.config(text="{}".format(resultado_hc))
+        label_valor_result_hp.config(text="{}".format(resultado_hp))
+        label_valor_result_h.config(text="{}".format(resultado_h))
 
     #BOTON DE EJECUCION
 
-    boton51=Button(filewin, font=("OCR A Extended", 13, "bold"), borderwidth=3, relief="solid", width=15, text="Ejecutar",command=ejecutar_operacion51)
+    boton51=Button(filewin, font=("OCR A Extended", 13, "bold"), borderwidth=3, relief="solid", width=15, text="Ejecutar",command=ejecutar_operacion)
     boton51.pack()
     boton51.config(bg="#B13BA7", fg="white",cursor="cross")
 
     # Resultados
-    label_result= Label(filewin,font=("Courier New",11) ,text="La Transmisión parcial 1 es:  ",fg="white",bg="black")
-    label_result.pack()
+    label_result_p= Label(filewin,font=("Courier New",11) ,text="La división es p:  ",fg="white",bg="black")
+    label_result_p.pack()
 
-    label_valor_result= Label(filewin,font=("Cambria",11) ,text="",fg="white",bg="#2F03CF")
-    label_valor_result.pack()
+    label_valor_result_p= Label(filewin,font=("Cambria",11) ,text="",fg="white",bg="#2F03CF")
+    label_valor_result_p.pack()
+
+    label_result_d= Label(filewin,font=("Courier New",11) ,text="El diámetro del círculo primitivo  es d:",fg="white",bg="black")
+    label_result_d.pack()
+
+    label_valor_result_d= Label(filewin,font=("Cambria",11) ,text="",fg="white",bg="#2F03CF")
+    label_valor_result_d.pack()
+
+    label_result_dc= Label(filewin,font=("Courier New",11) ,text="El diámetro del círculo de cabeza  es dc:",fg="white",bg="black")
+    label_result_dc.pack()
+
+    label_valor_result_dc= Label(filewin,font=("Cambria",11) ,text="",fg="white",bg="#2F03CF")
+    label_valor_result_dc.pack()
+
+    label_result_dp= Label(filewin,font=("Courier New",11) ,text="El diámetro del círculo de pie  es dp:",fg="white",bg="black")
+    label_result_dp.pack()
+
+    label_valor_result_dp= Label(filewin,font=("Cambria",11) ,text="",fg="white",bg="#2F03CF")
+    label_valor_result_dp.pack()
+
+    label_result_hc= Label(filewin,font=("Courier New",11) ,text="La altura de cabeza del diente es hc:",fg="white",bg="black")
+    label_result_hc.pack()
+
+    label_valor_result_hc= Label(filewin,font=("Cambria",11) ,text="",fg="white",bg="#2F03CF")
+    label_valor_result_hc.pack()
+
+    label_result_hp= Label(filewin,font=("Courier New",11) ,text="La altura de pie del diente es hp:",fg="white",bg="black")
+    label_result_hp.pack()
+
+    label_valor_result_hp= Label(filewin,font=("Cambria",11) ,text="",fg="white",bg="#2F03CF")
+    label_valor_result_hp.pack()
+
+    label_result_h= Label(filewin,font=("Courier New",11) ,text="La altura del diente es h:",fg="white",bg="black")
+    label_result_h.pack()
+
+    label_valor_result_h= Label(filewin,font=("Cambria",11) ,text="",fg="white",bg="#2F03CF")
+    label_valor_result_h.pack()
 
 #Se genera grafica del ejercicio opcion g)
     def GenerarGrafica_opciong():
-        plt.title("Engranaje y rueda de ejercicio opcion g)")
-        image = img.imread('engranaje_opcion_g).png')
+        plt.title("La rueda dentada y sus dimensiones")
+        image = img.imread('dimensiones_rueda_dentada_iie.jpg')
         plt.imshow(image)
         plt.show()
 
@@ -1925,7 +1977,7 @@ def ejercicio_10_1_opcionj():
         #valor M2
         valor_revol_engrane_M2 = int(campo_dato3_ej10_1.get())
 
-        resultado_10_1 = operacion_5(valor_dientes_engrane_z1,valor_dientes_engrane_z2,valor_revol_engrane_M2)
+        resultado_10_1 = operacion_10_1(valor_dientes_engrane_z1,valor_dientes_engrane_z2,valor_revol_engrane_M2)
         label_valor_result_10_1.config(text = resultado_10_1)
 
 
@@ -2649,4 +2701,3 @@ root.config(menu=menubar1)
 #ventanaDescargar=Tk()
 #ventanaDescargar.mainloop()
 root.mainloop()
-
